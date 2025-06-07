@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Saved from './pages/Saved';
+import Keep from './pages/Keep';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/saved" element={<Saved />} />
+        <Route path="/keep" element={<Keep />} />
       </Routes>
     </BrowserRouter>
   );
