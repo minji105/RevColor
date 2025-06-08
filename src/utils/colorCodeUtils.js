@@ -5,3 +5,12 @@ export function getHexColor([r, g, b]) {
 export function getRgbColor([r, g, b]) {
   return `rgb(${r.toString().padStart(3, '0')}, ${g.toString().padStart(3, '0')}, ${b.toString().padStart(3, '0')})`;
 }
+
+export function hexToRgbArray(hex) {
+  hex = hex.replace('#', '');
+  return [
+    parseInt(hex.slice(0, 2), 16),
+    parseInt(hex.slice(2, 4), 16),
+    parseInt(hex.slice(4, 6), 16),
+  ];
+}
