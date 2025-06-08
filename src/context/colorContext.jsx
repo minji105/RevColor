@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react';
 const ColorContext = createContext();
 
 export function ColorProvider({ children }) {
-  const [color, setColor] = useState('#fff');
+  const [color, setColor] = useState('#ffffff');
 
   return <ColorContext value={{ color, setColor }}>{children}</ColorContext>;
 }
